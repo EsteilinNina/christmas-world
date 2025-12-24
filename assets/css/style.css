@@ -1,96 +1,162 @@
+/* ==============================
+   VARIABLES GLOBALES
+================================ */
 :root {
   --primary: #b30000;
   --secondary: #006400;
+
   --bg: #ffffff;
+  --bg-soft: #f9f9f9;
+
   --text: #222;
+  --text-soft: #555;
+
+  --radius: 8px;
+  --shadow-soft: 0 4px 12px rgba(0,0,0,.08);
+  --shadow-hover: 0 10px 24px rgba(0,0,0,.12);
+
+  --max-width: 1100px;
 }
 
-/* Reset básico */
-* {
+/* ==============================
+   RESET MODERNO
+================================ */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ==============================
+   BASE
+================================ */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
 }
 
-/* Header */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==============================
+   HERO
+================================ */
 .hero {
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
-              url("../images/hero-navidad.webp") center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0,0,0,.45), rgba(179,0,0,.35)),
+    url("../images/hero-navidad.webp") center / cover no-repeat;
   color: #fff;
-  padding: 4rem 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
   margin-bottom: .5rem;
+  letter-spacing: .5px;
 }
 
-/* Layout */
-section {
-  padding: 2rem 1rem;
-  max-width: 1100px;
+.hero p {
+  max-width: 700px;
   margin: auto;
+  opacity: .95;
+}
+
+/* ==============================
+   LAYOUT
+================================ */
+section {
+  padding: 2.5rem 1rem;
+  max-width: var(--max-width);
+  margin-inline: auto;
 }
 
 h1, h2, h3 {
   color: var(--primary);
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
+  line-height: 1.3;
 }
 
-/* Países */
+p {
+  color: var(--text-soft);
+}
+
+/* ==============================
+   PAÍSES
+================================ */
 .countries ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .countries a {
-  display: block;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 6px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
   font-weight: 600;
-  transition: transform .2s, box-shadow .2s;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: var(--shadow-soft);
 }
 
-.countries a:hover {
+.countries a:hover,
+.countries a:focus-visible {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+  box-shadow: var(--shadow-hover);
+  outline: none;
 }
 
-/* Blog */
+/* ==============================
+   BLOG
+================================ */
 article {
   max-width: 800px;
-  margin: auto;
+  margin-inline: auto;
 }
 
 article p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-/* Footer */
+/* ==============================
+   FOOTER
+================================ */
 footer {
   background: #111;
   color: #eee;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
+  font-size: .9rem;
 }
 
-/* Responsive */
+footer a {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ==============================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
+  section {
+    padding: 2rem 1rem;
   }
 }
