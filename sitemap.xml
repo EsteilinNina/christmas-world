@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>https://tudominio.com/</loc></url>
+
+  <!-- Países -->
+  <url><loc>https://tudominio.com/pais/espana</loc></url>
+  <url><loc>https://tudominio.com/pais/mexico</loc></url>
+  <url><loc>https://tudominio.com/pais/argentina</loc></url>
+  <url><loc>https://tudominio.com/pais/estados-unidos</loc></url>
+  <url><loc>https://tudominio.com/pais/brasil</loc></url>
+  <url><loc>https://tudominio.com/pais/francia</loc></url>
+  <url><loc>https://tudominio.com/pais/alemania</loc></url>
+  <url><loc>https://tudominio.com/pais/japon</loc></url>
+  <url><loc>https://tudominio.com/pais/reino-unido</loc></url>
+  <url><loc>https://tudominio.com/pais/canada</loc></url>
+
+  <!-- Blog -->
+  <url><loc>https://tudominio.com/blog/navidad-en-el-mundo</loc></url>
+  <url><loc>https://tudominio.com/blog/tradiciones-navidenas</loc></url>
+
+</urlset>
