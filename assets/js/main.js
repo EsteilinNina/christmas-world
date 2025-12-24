@@ -1,33 +1,53 @@
 "use strict";
 
-/**
- * Lazy loading manual para imágenes
- * Mejora rendimiento y Core Web Vitals
- */
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll("img[data-src]");
+(() => {
+  /**
+   * Lazy loading de imágenes
+   * Optimiza rendimiento y Core Web Vitals
+   */
+  const lazyImages = document.querySelectorAll("img[data-src]");
 
   const loadImage = (img) => {
     img.src = img.dataset.src;
+
+    if (img.dataset.srcset) {
+      img.srcset = img.dataset.srcset;
+    }
+
+    img.onload = () => img.classList.add("loaded");
+
     img.removeAttribute("data-src");
+    img.removeAttribute("data-srcset");
   };
 
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        loadImage(entry.target);
-        obs.unobserve(entry.target);
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            loadImage(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: "200px 0px",
+        threshold: 0.01
       }
-    });
-  });
+    );
 
-  images.forEach(img => observer.observe(img));
-});
+    lazyImages.forEach(img => observer.observe(img));
+  } else {
+    // Fallback para navegadores antiguos
+    lazyImages.forEach(loadImage);
+  }
 
-/**
- * Año dinámico en footer
- */
-const yearElement = document.getElementById("year");
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
+  /**
+   * Año dinámico en footer
+   */
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+})();
