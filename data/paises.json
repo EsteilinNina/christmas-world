@@ -1,0 +1,102 @@
+{
+  "alemania": {
+    "lang": "de",
+    "nombre": "Deutschland",
+    "titulo": "Weihnachten in Deutschland",
+    "descripcion": "Traditionen, Weihnachtsmärkte und typisches Essen",
+    "tradiciones": "Deutschland ist bekannt für seine Weihnachtsmärkte und familiären Bräuche.",
+    "comida": ["Lebkuchen", "Bratwurst", "Christstollen"],
+    "saludo": "Frohe Weihnachten!",
+    "locale": "de_DE"
+  },
+  "espana": {
+    "lang": "es",
+    "nombre": "España",
+    "titulo": "Navidad en España",
+    "descripcion": "Tradiciones, comidas típicas y celebraciones",
+    "tradiciones": "En España la Navidad se celebra con familia, lotería y cabalgatas.",
+    "comida": ["Turrón", "Polvorones", "Cordero"],
+    "saludo": "¡Feliz Navidad!",
+    "locale": "es_ES"
+  },
+  "mexico": {
+    "lang": "es",
+    "nombre": "México",
+    "titulo": "Navidad en México",
+    "descripcion": "Tradiciones mexicanas, posadas y comidas típicas",
+    "tradiciones": "En México se celebran posadas, piñatas y Misa de Gallo.",
+    "comida": ["Tamales", "Ponche", "Bacalao"],
+    "saludo": "¡Feliz Navidad!",
+    "locale": "es_MX"
+  },
+  "argentina": {
+    "lang": "es",
+    "nombre": "Argentina",
+    "titulo": "Navidad en Argentina",
+    "descripcion": "Celebraciones, comidas y tradiciones argentinas",
+    "tradiciones": "Se celebra con familia, fuegos artificiales y cena abundante.",
+    "comida": ["Asado", "Pan dulce", "Vino espumoso"],
+    "saludo": "¡Feliz Navidad!",
+    "locale": "es_AR"
+  },
+  "estados-unidos": {
+    "lang": "en",
+    "nombre": "United States",
+    "titulo": "Christmas in the United States",
+    "descripcion": "Christmas traditions, decorations and festive meals",
+    "tradiciones": "Decorating trees, Santa Claus and exchanging gifts are common.",
+    "comida": ["Roast turkey", "Pumpkin pie", "Eggnog"],
+    "saludo": "Merry Christmas!",
+    "locale": "en_US"
+  },
+  "brasil": {
+    "lang": "pt",
+    "nombre": "Brasil",
+    "titulo": "Natal no Brasil",
+    "descripcion": "Tradições, festas e comidas típicas brasileiras",
+    "tradiciones": "Se celebra con cenas familiares, Papai Noel y fiestas en la playa.",
+    "comida": ["Panettone", "Pernil", "Rabanada"],
+    "saludo": "Feliz Natal!",
+    "locale": "pt_BR"
+  },
+  "francia": {
+    "lang": "fr",
+    "nombre": "France",
+    "titulo": "Noël en France",
+    "descripcion": "Traditions, marchés et repas de Noël",
+    "tradiciones": "Marchés de Noël, luces decorativas y cenas festivas.",
+    "comida": ["Bûche de Noël", "Foie gras", "Huîtres"],
+    "saludo": "Joyeux Noël!",
+    "locale": "fr_FR"
+  },
+  "japon": {
+    "lang": "ja",
+    "nombre": "日本",
+    "titulo": "日本のクリスマス",
+    "descripcion": "クリスマスの習慣と食べ物",
+    "tradiciones": "カップル向けイベントやイルミネーションが人気です。",
+    "comida": ["ケーキ", "フライドチキン", "クリスマスディナー"],
+    "saludo": "メリークリスマス！",
+    "locale": "ja_JP"
+  },
+  "reino-unido": {
+    "lang": "en",
+    "nombre": "United Kingdom",
+    "titulo": "Christmas in the United Kingdom",
+    "descripcion": "Traditional celebrations and festive meals",
+    "tradiciones": "Christmas crackers, carols, decorations and family dinners.",
+    "comida": ["Roast turkey", "Christmas pudding", "Mince pies"],
+    "saludo": "Merry Christmas!",
+    "locale": "en_GB"
+  },
+  "canada": {
+    "lang": "en",
+    "nombre": "Canada",
+    "titulo": "Christmas in Canada",
+    "descripcion": "Festive traditions, winter activities and typical foods",
+    "tradiciones": "Decorations, caroling, and spending time with family.",
+    "comida": ["Roast turkey", "Butter tarts", "Christmas cookies"],
+    "saludo": "Merry Christmas!",
+    "locale": "en_CA"
+  }
+}

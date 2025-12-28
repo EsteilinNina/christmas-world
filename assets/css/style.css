@@ -170,6 +170,37 @@ p {
   border-radius: var(--radius);
 }
 
+.blog {
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  margin-top: 3rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.blog h2 {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.blog-list a {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-list a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--primary);
+  opacity: .8;
+}
+
+
 .blog-list {
   list-style: none;
   margin-top: 1.25rem;
@@ -280,4 +311,51 @@ footer a {
     background: linear-gradient(180deg, #020617, #000);
     color: #cbd5f5;
   }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .countries-grid {
+    gap: 1rem;
+  }
+
+  .countries-grid a {
+    padding: 1.1rem;
+  }
+
+  .blog-list a {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+  .blog {
+  padding: 2rem 1.25rem;
+}
+
+.blog-list a {
+  font-size: .95rem;
+}
+
+.blog-list a small {
+  font-size: .75rem;
+}
+
 }

@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#b30000">
+  <meta name="author" content="Navidad en el Mundo">
+  <meta name="format-detection" content="telephone=no">
+
 
   <title>Navidad en el Mundo | Tradiciones y Celebraciones</title>
 
@@ -25,6 +29,8 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/rss.js" defer></script>
+
 </head>
 
 <body>
@@ -42,32 +48,29 @@
       <h2 id="paises-title">🌍 Explora por País</h2>
 
       <ul class="countries-grid">
-        <li><a href="pais/espana.html">🇪🇸 España</a></li>
-        <li><a href="pais/mexico.html">🇲🇽 México</a></li>
-        <li><a href="pais/argentina.html">🇦🇷 Argentina</a></li>
-        <li><a href="pais/estados-unidos.html">🇺🇸 Estados Unidos</a></li>
-        <li><a href="pais/brasil.html">🇧🇷 Brasil</a></li>
-        <li><a href="pais/francia.html">🇫🇷 Francia</a></li>
-        <li><a href="pais/alemania.html">🇩🇪 Alemania</a></li>
-        <li><a href="pais/japon.html">🇯🇵 Japón</a></li>
-        <li><a href="pais/reino-unido.html">🇬🇧 Reino Unido</a></li>
-        <li><a href="pais/canada.html">🇨🇦 Canadá</a></li>
-      </ul>
+        <li><a href="pais/pais.html?pais=espana">🇪🇸 España</a></li>
+        <li><a href="pais/pais.html?pais=mexico">🇲🇽 México</a></li>
+        <li><a href="pais/pais.html?pais=argentina">🇦🇷 Argentina</a></li>
+        <li><a href="pais/pais.html?pais=estados-unidos">🇺🇸 Estados Unidos</a></li>
+        <li><a href="pais/pais.html?pais=brasil">🇧🇷 Brasil</a></li>
+        <li><a href="pais/pais.html?pais=francia">🇫🇷 Francia</a></li>
+        <li><a href="pais/pais.html?pais=alemania">🇩🇪 Alemania</a></li>
+        <li><a href="pais/pais.html?pais=japon">🇯🇵 Japón</a></li>
+        <li><a href="pais/pais.html?pais=reino-unido">🇬🇧 Reino Unido</a></li>
+        <li><a href="pais/pais.html?pais=canada">🇨🇦 Canadá</a></li>
+     </ul>
+
     </section>
 
-    <section class="blog" aria-labelledby="blog-title">
-      <h2 id="blog-title">📰 Blog de Navidad</h2>
-      <p>Artículos, curiosidades y tradiciones navideñas de todo el mundo.</p>
+<section class="blog" aria-labelledby="blog-title">
+  <h2 id="blog-title">📰 Noticias Navideñas</h2>
+  <p>Últimas noticias y artículos navideños de medios internacionales.</p>
 
-      <ul class="blog-list">
-        <li>
-          <a href="blog/navidad-en-el-mundo.html">📚 Navidad en el Mundo</a>
-        </li>
-        <li>
-          <a href="blog/tradiciones-navidenas.html">🎁 Tradiciones Navideñas</a>
-        </li>
-      </ul>
-    </section>
+  <ul class="blog-list" id="news-feed">
+    <li>Cargando noticias…</li>
+  </ul>
+</section>
+
 
   </main>
 
